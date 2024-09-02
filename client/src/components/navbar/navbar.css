@@ -1,0 +1,28 @@
+.container a:hover {
+    color: #AAFCEE !important;
+    border-bottom: 1px solid #AAFCEE !important;
+}
+
+.container a {
+    border: 1px solid transparent !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.nav {
+    position: sticky !important;
+}
+
+@media (max-width: 768px) {
+
+    .nav {
+        margin-bottom: 2rem;
+    }
+    .nav button {
+        background-color: #AAFCEE !important;
+        border: none !important;
+    }
+
+    .nav button:focus {
+        outline: none !important;
+    }
+}

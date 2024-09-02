@@ -1,0 +1,55 @@
+.about {
+    height: 100dvh;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.about img {
+    width: 30vw;
+}
+
+.about .line {
+    background-color: #AAFCEE;
+    height: 1vh;
+    width: 10vw;
+    margin-top: -5px;
+}
+
+.about .body i {
+    color: #AAFCEE;
+    margin-left: -2px;
+    margin-top: -5px;
+}
+
+.about .body h2 {
+    padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .about {
+        width: 100%;
+        height: auto;
+        margin-top: 5rem;
+        justify-content: flex-start;
+    }
+
+    .about .pic {
+        display: none;
+    }
+
+    .about .body {
+        width: 100% !important;
+    }
+
+    .about .body .para {
+        width: 100%;
+    }
+
+    .about .para h5 {
+        font-size: 16px;
+    }
+
+    .about .mb-5 {
+        margin-bottom: 1rem;
+    }
+}

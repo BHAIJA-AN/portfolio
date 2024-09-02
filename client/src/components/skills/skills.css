@@ -1,0 +1,58 @@
+.skills {
+    width: 100%;
+    height: auto;
+    padding: 5rem;
+}
+
+.skills .images {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 2rem; /* Ensure there is spacing for the second row */
+}
+
+.skills .images.first-row,
+.skills .images.second-row {
+    flex-wrap: wrap;
+}
+
+.skills .images img {
+    width: 10vw;
+    cursor: pointer;
+}
+
+.skills .line {
+    background-color: #AAFCEE;
+    height: 1vh;
+    width: 10vw;
+    margin-top: -5px;
+}
+
+.skills i {
+    color: #AAFCEE;
+    margin-left: -2px;
+    margin-top: -5px;
+}
+
+.skills h2 {
+    padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .skills {
+        padding: 5px;
+        margin-top: 3rem;
+        height: auto;
+    }
+
+    .skills .images {
+        padding: 10px;
+        gap: 1rem;
+    }
+
+    .skills .images img {
+        width: 15vw;
+    }
+}

@@ -1,0 +1,155 @@
+.contact {
+    height: 100dvh;
+    width: 100%;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.contact .card input,
+.contact .card textarea {
+    border: none;
+    resize: none;
+    padding: 10px;
+    background-color: #AAFCEE;
+    border-radius: 12px;
+    padding-left: 10px;
+}
+
+.contact .card input:focus,
+.contact .card textarea:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.contact .card {
+    width: 30vw;
+    height: 50vh;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.contact .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact .card .btn {
+    border-radius: 12px;
+    /* width: 50%; */
+}
+
+.contact h1 {
+    color: #AAFCEE;
+}
+
+.contact .links {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.contact .links i {
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.contact .toast {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 20vw;
+    padding: 15px;
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    text-align: center;
+}
+
+.contact .toast i {
+    color: red;
+    font-size: large;
+}
+
+.contact .toast h4 {
+    font-size: small;
+    color: black;
+    font-weight: bold;
+}
+
+.contact .blur .modal {
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    height: 25vh;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    border-radius: 18px;
+    gap: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .modal h4 {
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contact .modal i {
+    color: green;
+    font-size: 2rem;
+}
+
+
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact .card {
+        width: auto;
+        height: 40%;
+    }
+
+    .contact .toast {
+        width: 100%;
+        bottom: 10px;
+        top: 80%;
+        height: 20vh;
+        right: 0%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact .toast i {
+        font-size: 2rem !important;
+    }
+
+    .contact .toast h4 {
+        font-size: large;
+    }
+
+    .contact .modal {
+        width: 90% !important;
+    }
+
+    .contact .modal button {
+        width: 50% !important;
+    }
+}
